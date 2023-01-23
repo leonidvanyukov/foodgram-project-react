@@ -1,4 +1,4 @@
-name: foodgram workflow
+name: Статус сборки проекта
 
 on: [push]
 
