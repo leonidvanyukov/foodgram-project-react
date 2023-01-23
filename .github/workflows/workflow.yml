@@ -61,7 +61,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull shottab/foodgram_backend:latest
+            sudo docker pull shottab/foodgram:latest
             sudo docker pull shottab/foodgram_frontend:latest
             cd infra/
             sudo docker-compose stop
