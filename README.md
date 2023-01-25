@@ -90,3 +90,8 @@ sudo docker-compose exec backend python manage.py load_ingrs
 ```url
 http://127.0.0.1/api/docs/
 ```
+```
+Адрес сервера - http://84.201.129.17/
+Логин - leonid@vanyukov.ru
+Пароль - testpassword
+```
