@@ -29,7 +29,7 @@ class RecipeAdmin(admin.ModelAdmin):
     def get_author(self, obj):
         return obj.author.email
 
-    @admin.display(description='Тэги123')
+    @admin.display(description='Тэги')
     def get_tags(self, obj):
         list_ = Tag.objects.values_list('name', flat=True)
         result = []
