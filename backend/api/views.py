@@ -215,7 +215,7 @@ class RecipesViewSet(viewsets.ModelViewSet):
         page.setFont('Vera', 14)
         if shopping_cart:
             indent = 20
-            page.drawString(x_position, y_position, 'Cписок для покупок:')
+            page.drawString(x_position, y_position, 'Список для покупок:')
             for index, recipe in enumerate(shopping_cart, start=1):
                 page.drawString(
                     x_position, y_position - indent,
