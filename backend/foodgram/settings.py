@@ -13,8 +13,7 @@ SECRET_KEY = (
 
 DEBUG = os.getenv('DEBUG', default='False') == 'False'
 
-ALLOWED_HOSTS = os.environ.get(
-    'ALLOWED_HOSTS', default='130.193.49.218').split(', ')
+ALLOWED_HOSTS = '130.193.49.218'
 
 AUTH_USER_MODEL = 'users.User'
 
