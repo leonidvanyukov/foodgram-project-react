@@ -29,10 +29,13 @@ class RecipeAdmin(admin.ModelAdmin):
     def get_author(self, obj):
         return obj.author.email
 
-    @admin.display(description='Тэги')
+    @admin.display(description='Тэги123')
     def get_tags(self, obj):
-        list_ = Tag.objects.values()
-        return ', '.join(list_)
+        list_ = Tag.objects.values_list('name', flat=True)
+        result = []
+        for tag in list_:
+            result.append(tag)
+        return result
 
     @admin.display(description=' Ингредиенты ')
     def get_ingredients(self, obj):
